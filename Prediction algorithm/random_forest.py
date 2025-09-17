@@ -30,6 +30,7 @@ def main():
     cm = plot_confusion_matrix(y_test, y_pred)
     # Detailed performance report
     performances=classification_report(y_test, y_pred)
+    print( performances)
     with open("../results/random_forest_results.txt", "w") as f:
         f.write(f"Confusion matrix :\n{np.array2string(cm)}\n\n")
         f.write(f"Model performances: \n {performances}\n")

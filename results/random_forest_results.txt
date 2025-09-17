@@ -1,6 +1,6 @@
 Confusion matrix :
-[[1533  164]
- [ 154 1542]]
+[[1530  167]
+ [ 148 1548]]
 
 Model performances: 
                precision    recall  f1-score   support

@@ -9,7 +9,7 @@
 ## Methods :
 1) Logistic Regression
 2) Random Forest
-3) ...
+3) Gradient Boosting
 
 
 ## Results :
@@ -17,3 +17,4 @@
 |------------------------|----------|
 | Logistic Regression    | 0.88     |
 | Random Forest          | 0.90     |
+| Gradient Boosting      | 0.91     |
