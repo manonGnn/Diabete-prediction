@@ -3,6 +3,7 @@ import numpy as np
 import sys
 import os
 from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import classification_report
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from utils import plot_confusion_matrix,load_train_test_data
 
@@ -52,8 +53,12 @@ def main():
     accuracy = (y_pred == y_test).mean()
     print("Test accuracy:", accuracy)
 
-    # Plot confusion matrix
-    plot_confusion_matrix(y_test, y_pred)
 
+    # Plot confusion matrix
+    cm = plot_confusion_matrix(y_test, y_pred)
+    performances=classification_report(y_test, y_pred)
+    with open("../results/logistic_regression_results.txt", "w") as f:
+        f.write(f"Confusion matrix :\n{np.array2string(cm)}\n\n")
+        f.write(f"Model performances: \n {performances}\n")
 if __name__ == "__main__":
     main()

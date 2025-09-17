@@ -10,6 +10,7 @@ def plot_confusion_matrix(y_test, y_pred):
     disp.plot()
     plt.title("Confusion Matrix")
     plt.show()
+    return cm
 
 def load_train_test_data():
     X_train = pd.read_csv('../dataset/splits/X_train.csv')

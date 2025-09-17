@@ -8,7 +8,7 @@
 
 ## Methods :
 1) Logistic Regression
-2) ...
+2) Random Forest
 3) ...
 
 
@@ -16,4 +16,4 @@
 | Method                | Accuracy |
 |------------------------|----------|
 | Logistic Regression    | 0.88     |
-| ....         | .... |
+| Random Forest          | 0.90     |
